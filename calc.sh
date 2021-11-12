@@ -11,3 +11,32 @@
  read name
  echo "Nice to meet you $name"
 
+
+ while true
+ do
+
+ echo "please choose one of the options above"
+ read menu
+ case $menu in
+     "Add"|"add")
+	  echo "You choose Add"
+	 ;;
+     "Substract"|"substract")
+	     echo "You choose Substract"
+	     ;;
+     "Multiply"|"multiply")
+	     echo "You choose Multiply"
+	     ;;
+     "Exit"|"exit")
+	     echo "You choose Exit"
+	     ;;
+
+     *)
+	   echo "Sorry that option is not correct, try again please."
+	   ;; 
+
+
+
+ esac
+
+ done
