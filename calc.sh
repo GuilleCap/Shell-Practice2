@@ -20,7 +20,15 @@
  case $menu in
      "Add"|"add")
 	  echo "You choose Add"
-	 ;;
+	  echo "Please enter the first number"
+	  read first_number
+	  echo "Please enter the second number"
+	  read second_number
+          echo $first_number + $second_number 
+	  let result=$first_number+$second_number
+	  echo $result
+	  exit 0
+	  ;;
      "Substract"|"substract")
 	     echo "You choose Substract"
 	     ;;
@@ -29,6 +37,7 @@
 	     ;;
      "Exit"|"exit")
 	     echo "You choose Exit"
+	     exit 0
 	     ;;
 
      *)
